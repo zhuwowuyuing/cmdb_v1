@@ -100,12 +100,12 @@ STATICFILES_DIRS = (
 #
 # # ADMIN_MEDIA_PREFIX = STATIC_URL + "grappelli/"
 #
-# # Custom Date format Setting
-# DATE_FORMAT = 'Y-m-d'
-# DATETIME_FORMAT = 'Y-m-d H:i:s'
-# SHORT_DATE_FORMAT = 'Y.m.d'
-# SHORT_DATETIME_FORMAT = 'Y.m.d H:i'
-# TIME_FORMAT = 'H:i'
-# YEAR_MONTH_FORMAT = 'Y.m'
-# MONTH_DAY_FORMAT = 'm.d'
-# FIRST_DAY_OF_WEEK = 1
+# Custom Date format Setting
+DATE_FORMAT = 'Y-m-d'
+DATETIME_FORMAT = 'Y-m-d H:i:s'
+SHORT_DATE_FORMAT = 'Y.m.d'
+SHORT_DATETIME_FORMAT = 'Y.m.d H:i'
+TIME_FORMAT = 'H:i'
+YEAR_MONTH_FORMAT = 'Y.m'
+MONTH_DAY_FORMAT = 'm.d'
+FIRST_DAY_OF_WEEK = 1

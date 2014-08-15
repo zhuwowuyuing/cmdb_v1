@@ -55,11 +55,12 @@ class Server(models.Model):
     dept            = models.CharField('使用部门',max_length=60, blank=True)
     business        = models.CharField('业务系统',max_length=60, blank=True)
     ownername       = models.CharField('领用人',max_length=60, blank=True)
-    warehousedate   = models.DateField('入库时间', blank=True)
-    receivedate     = models.DateField('领用时间', blank=True)
-    warrantyexpirationdate = models.DateField('保修至', blank=True)
-    scrapDate       = models.DateField('报废时间', blank=True)
+    warehousedate   = models.DateField('入库时间', blank=True, null=True)
+    receivedate     = models.DateField('领用时间', blank=True, null=True)
+    warrantyexpirationdate = models.DateField('保修至', blank=True, null=True)
+    scrapDate       = models.DateField('报废时间', blank=True, null=True)
     changeInfo      = models.TextField('变更信息',max_length=4000, blank=True)
+    deviceno          = models.ForeignKey(Devices)
 
     def __unicode__(self):
         return u'%s' % (self.asset)
